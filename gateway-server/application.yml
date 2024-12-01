@@ -9,3 +9,9 @@ server:
   instance:
     lease-renewal-interval-in-seconds: 30  
     lease-expiration-duration-in-seconds: 90  
+ spring:
+    cloud:
+        gateway:
+            discovery.locator:
+                enabled: true
+                lowerCaseServiceId: true
