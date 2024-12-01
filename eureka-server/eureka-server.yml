@@ -1,6 +1,6 @@
 server:
-  ports:
-      - "8761:8761"
+  port:
+      8761
  eureka:
     instance:
         hostname: localhost
