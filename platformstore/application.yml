@@ -30,7 +30,7 @@ spring:
   topic:
     send-order: send-order-event
   kafka:
-    bootstrap-servers: kafka:9092
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
     consumer:
       group-id: "order-1"
       auto-offset-reset: earliest
