@@ -8,9 +8,9 @@ spring:
       import: configserver:${CONFIG_SERVER_URL:http://configserver:8888}
 
   datasource:
-  url: jdbc:postgresql://service-db:5432/platformstore
-  username: username
-  password: password
+    url: jdbc:postgresql://service-db:5432/platformstore
+    username: username
+    password: password
 
   liquibase:
     enabled: true
