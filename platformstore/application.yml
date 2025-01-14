@@ -7,26 +7,17 @@ spring:
         enabled: false
       import: configserver:${CONFIG_SERVER_URL:http://configserver:8888}
 
+  h2:
+    console:
+      enabled: true
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:15432}/product_database
-    username: username
-    password: password
-
-  liquibase:
-    enabled: true
-    drop-first: false
-    change-log: classpath:db/changelog/db.changelog-master.xml
-    default-schema: public
-
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
   jpa:
-    show-sql: false
-    open-in-view: false
     hibernate:
-      ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
+      ddl-auto: update
+    show-sql: true
   topic:
     send-order: send-order-event
   kafka:
