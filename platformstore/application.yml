@@ -9,7 +9,7 @@ spring:
   security:
     user:
       name: admin
-      password: changeme
+      password: 
 
   h2:
     console:
