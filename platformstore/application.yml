@@ -6,10 +6,7 @@ spring:
       import-check:
         enabled: false
       import: configserver:${CONFIG_SERVER_URL:http://configserver:8888}
-  security:
-    user:
-      name: admin
-      password: 
+ 
 
   h2:
     console:
