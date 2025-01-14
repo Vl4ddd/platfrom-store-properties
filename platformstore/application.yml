@@ -21,6 +21,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update # Автоматическое создание и обновление схемы базы данных
+      dialect: org.hibernate.dialect.H2Dialect
     show-sql: true # Показ SQL-запросов в логах
   topic:
     send-order: send-order-event
